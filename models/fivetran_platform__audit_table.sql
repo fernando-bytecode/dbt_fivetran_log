@@ -129,7 +129,7 @@ sum_records_modified as (
         and records_modified_log.created_at > limit_to_table_starts.sync_start 
         and records_modified_log.created_at < coalesce(limit_to_table_starts.sync_end, limit_to_table_starts.next_sync_start) 
 
-    {{ dbt_utils.group_by(n=10) }}
+    {{ dbt_utils.group_by(n=11) }}
 ),
 
 final as (

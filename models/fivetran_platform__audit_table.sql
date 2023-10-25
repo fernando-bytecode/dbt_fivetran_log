@@ -110,7 +110,7 @@ sum_records_modified as (
         limit_to_table_starts.connector_name,
         coalesce(records_modified_log.schema_name, limit_to_table_starts.connector_name) as schema_name,
         limit_to_table_starts.table_name,
-        limit_to_table_starts.sync_id.
+        limit_to_table_starts.sync_id,
         limit_to_table_starts.destination_id,
         limit_to_table_starts.destination_name,
         limit_to_table_starts.write_to_table_start,
